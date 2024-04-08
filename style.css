@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: arial, sans-serif;
+	font-size: 10px;
+}
+
+/* Início da estilização do Cabeçalho/Menu principal do site */
+
+#menu{      /* especificando essa UL definida com nome "menu" pq podem ter várias ULs */
+	background-color: #2BB0FA;     /* cor do fundo dos 5menus/links apenas */
+	line-height: 35px;             /* altura da linha de cor do fundo  dos 5menus/links apenas */
+	width: 100%;                    /* largura/comprimento da linha dos 5menus/links, 100% é até o final */
+	position: fixed;               /* indica que o menu/links fica fixo quando rolar a barra para baixo/cima */
+	border:solid 2px  #fff;
+}
+
+#menu li{         /* especificando a "li" da  UL denominada "menu"*/
+	display: inline;      /* define como os elmts."li", dentro do elmto. com id="menu" serão exibidos, no caso em uma unica linha lado a lado, se for "block" será um abaixo do outro  */
+}
+
+#menu a:link, a:visited{            /* seletores que se referem aos links encontrados dentro do id"menu" e permite vc estilizar como quer que sejam  antes de colocar o mouse sobre eles*/
+	font-size: 1.3rem;              /* tamanho texto dos 5 menus/links ..grande/pequeno/médio..ir ajustando */
+	padding: 40px; /* espaço dentro da linha horizontal "entre cada tipo" dos 5menus/links */
+	text-transform: uppercase;      /* fonte dos 5menus/links  - MAIUSCULA */
+	text-decoration: none;     /* texto dos 5menus/links  sublinhados cada um individualmente */
+	color: white;   /* cor "da fonte" dos 5menus/links PORQUE NÃO ACATOU BRANCO?????*/
+
+}
+
+#menu a:hover, a:active{            /* define a côr que os links ficam quado mouse está sobre eles (passe o mouse flutuar...  ativo..) */
+	
+	color:black;                 /* cor "da fonte" dos 5menus/links quando o mouse está sobreposto */
+}
+
+/* Final da estilização do Cabeçalho/Menu principal do site */
+
+#home{   /* Estilizando sç 1 - foto maior */
+	background-image: url(../images/13.jpg);     /* buscar imagem 2, voltando duas pastas e inserindo como imagem de fundo */
+	width: 100%;     /*Largura figura tela */
+	height: 220vh; /*altura figura na tela  */
+	background-repeat: no-repeat; /*não repetição de cor ou imagem do fundo */
+	background-size: cover; /*tamanho do fundo - capa */
+	background-position: center center; /*imagem de fundo alinhado centro centro */
+}
+
+.nomefoto {
+  position: absolute;
+  top: 120px;
+  left: 36px;
+  font-size: 2.2rem;
+  color: #137AFA;
+  font-family:"verdana" ;
+}
+
+
+#familia{    /* estilizando sç 3 */
+	background-color: #B8D5FB;  /* cor fundo da sç inteiraaaaaaaa */
+	padding: 45px;  /*preenchimento do pano de fundo em geral   */
+	height: 220vh;    /*altura do pano de fundo   */
+	text-align: center; /*alinhamento texto  */
+	font-size: 2rem;  /*tamanho fonte texto titulo */
+}
+
+#familia .img{   /*usou    .img pq é o nome da classe */
+	width: 290px;   /*tamanho quadrado das imagens */
+	border: 1px #FFF solid;
+	margin: 25px;               /*alinhamentos/espaçamentos  entre as imagens,  bordas pg, etc */
+	border-radius: 10px; /*canto arredondado quadrado das imagens */
+	box-shadow: 10px 10px 30px #000;  /*sombra do quadrado das imagens, nem faz diferença */   
+}
+
+h4{    /* estilizando o título */
+	margin-top: 10px;      /* alinhamento texto td em relação cortina de fundo */
+	margin-bottom: 30px;   /* alinhamento texto td em relação cortina de fundo */
+	text-align: center;   /* alinhando o título apenas */
+	text-decoration: underline;
+}
+
+#espiritual{    /* estilizando sç 3 */
+	background-color: #dddddd;  /* cor fundo da sç inteiraaaaaaaa */
+	padding: 45px;  /*preenchimento do pano de fundo em geral   */
+	height: 110vh;    /*altura do pano de fundo   */
+	text-align: center; /*alinhamento texto  */
+	font-size: 2rem;  /*tamanho fonte texto titulo */
+}
+
+#espiritual .img{   /*usou    .img pq é o nome da classe */
+	width: 290px;   /*tamanho quadrado das imagens */
+	border: 1px #FFF solid;
+	margin: 30px; margin-top: 5px;              /*alinhamentos/espaçamentos  entre as imagens,  bordas pg, etc */
+	border-radius: 10px; /*canto arredondado quadrado das imagens */
+	box-shadow: 10px 10px 30px #000;  /*sombra do quadrado das imagens, nem faz diferença */   
+}
+
+#espiritual .box {
+	width: 250px; height: 150px;
+	border: 2px solid #E0AC0F; border-radius: 10px;
+	background-color: #ffffff;
+	float: left; margin-left: 8%;
+	padding: 1%;
+	box-shadow: 10px 10px 15px #000;
+}
+
+#espiritual .box p {
+	margin-left: 2%; font-size: 17px; 
+	text-align: center;
+
+	
+}
+
+#espiritual a:hover, a:active{            /* define a côr que os links ficam quado mouse está sobre eles (passe o mouse flutuar...  ativo..) */
+	background-color: #fff;      /* cor "do fundo" dos 5menus/links quando o mouse está sobreposto */
+	color: red;                 /* cor "da fonte" dos 5menus/links quando o mouse está sobreposto */
+}
+
+#lazer{    /* estilizando sç 3 */
+	background-color: #fff;  /* cor fundo da sç inteiraaaaaaaa */
+	padding: 45px;  /*preenchimento do pano de fundo em geral   */
+	height: 240vh;    /*altura do pano de fundo   */
+	text-align: center; /*alinhamento texto  */
+	font-size: 2rem;  /*tamanho fonte texto titulo */
+	
+}
+
+#lazer .img{   /*usou    .img pq é o nome da classe */
+	width: 290px;   /*tamanho quadrado das imagens */
+	border: 1px #FFF solid;
+	margin: 25px;               /*alinhamentos/espaçamentos  entre as imagens,  bordas pg, etc */
+	border-radius: 10px; /*canto arredondado quadrado das imagens */
+	box-shadow: 10px 10px 30px #000;  /*sombra do quadrado das imagens, nem faz diferença */   
+}
+
+
+
+#curriculum{
+	background-color:#B8D5FB ;
+	padding: 45px;  
+	height: 155vh;    /*altura do pano de fundo*/
+	width: 100%;
+	margin-top: 0PX;
+
+}  
+#curriculum h4{    /* estilizando o título */
+	margin-top: 10px;      /* alinhamento texto td em relação cortina de fundo */
+	margin-bottom: 15px;   /* alinhamento texto td em relação cortina de fundo */
+	text-align: center;   /* alinhando o título apenas */
+	font-size: 20PX;
+	text-decoration: underline;
+}
+
+#curriculum .box2{
+	width: 280px; height: 100px;
+	border: 2px solid #E0AC0F; border-radius: 10px;
+	background-color: #ffffff;
+	font-weight: bold; /* dá efeito negrito no texto */
+	font-size: 12px;
+	float: left; 
+	padding: 1%;
+	margin: 45px;  
+	list-style: none;
+	box-shadow: 10px 10px 15px #000;
+}
+#curriculum a:link, a:visited{
+	color: blue;
+}
+
+#curriculum a:hover, a:active{            
+	background-color: ;      /* cor "do fundo" dos 5menus/links quando o mouse está sobreposto */
+	color: red;             
+}
+
+
+
+/* INÍCIO SEÇÃO CONTATO */
+
+.imgprincipal{ /*define as propriedades da imagem principal pg CLIENTES/COBRE/CONTATO*/
+	width: 20%; /*ALTERADO PARA 20 no projeto*/
+	height: auto;
+	
+
+
+	position: relative;
+	float: left;
+	margin-right: 5%;  /*para separar dos elementos/container da direita*/
+	margin-bottom: 10px;  /*para separar dos elementos/container debaixo*/
+}
+
+.imgprincipal img{  /* 95% e td o mais apenas em relação ao container acima destinado pra img principal*/
+	width: 95%;
+	margin-left:30%; /*lembrando que margin é aplicado da "Borda pra Fora do container que está contido"*/
+	margin-top: 50px;
+	border: solid 2px #137AFA;
+	border-radius: 25px; /*ARREDONDANDO CANTOS no projeto*/
+}
+
+#txt_contato{
+	width: 100%; height: 81vh;
+	color: #137AFA;   /* Cor  texto todo  */
+
+}
+
+
+
+#txt_contato form{
+	width: 40%; position: relative; float: left; 
+	background-color:# ;
+	padding: 1%; top: 5%;
+	min-height: 300px;  /*altura mínima*/
+	margin-left: 200px;
+
+}
+
+#txt_contato form label{  
+	font-size: 15PX;
+
+}
+
+#txt_contato form input{
+	width: 98%;height: 25px;  /*QUADRADO  DO "DIGITAR"*/
+	margin-top: 10px; margin-bottom: 15px;
+	border: solid #137AFA 1px ;
+	padding-left: 1%;  /*para o texto dentro da caixa não ficar colado na esquerda */
+	border-radius: 12px; /*arredonda os cantos*/
+}
+
+#txt_contato form textarea{
+	width: 98%;
+	border: solid #137AFA 1px;
+	padding-left: 1%;
+	margin-top: 8PX;
+	min-height: 80px;  /*altura mínima*/
+	border-radius: 12px; /*arredonda os cantos*/
+}
+
+#txt_contato form button{
+	width: 25%;height: auto;
+	padding: 15px 0 15px 0;
+	margin-left: 18%; margin-top: 5%;
+	background-color: #2BB0FA; color:#ffffff;
+	font-size: 1rem; cursor: pointer;
+	display: inline;
+}
+
+#txt_contato form button:hover{
+	background-color:#2B98FA ;  /* cor durante o clicar */
+
+}
+/* FIM SEÇÃO CONTATO */
+
+footer{
+	background-color: #BBBF49;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.1rem;
+	color: #1538FF;
+}
